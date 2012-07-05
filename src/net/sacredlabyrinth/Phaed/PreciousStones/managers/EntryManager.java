@@ -308,7 +308,7 @@ public final class EntryManager
             {
                 if (!field.hasFlag(FieldFlag.SNEAKING_BYPASS) || !player.isSneaking())
                 {
-                    plugin.getForceFieldManager().announceAllowedPlayers(field, Helper.capitalize(player.getName()) + " has triggered an entry alert at " + field.getName() + " " + ChatColor.DARK_GRAY + field.getCoords());
+                    plugin.getForceFieldManager().announceAllowedPlayers(field, "[ENTRY]" + Helper.capitalize(player.getName()) + ": " + field.getName() + " " + ChatColor.DARK_GRAY + field.getCoords());
                 }
             }
         }
